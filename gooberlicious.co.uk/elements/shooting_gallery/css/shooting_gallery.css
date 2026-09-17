@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+html,body {
+	background-color: #000;
+	color: #CCC;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapperApp {
+	height: 600px;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	cursor: crosshair;
+}
+#wrapperApp * {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;	
+}
+#wrapperBackWall {
+	height: 600px;
+	background-image: url(../img/bg.jpg);
+	background-repeat: repeat-x;
+	background-position: center 97px;
+}
+#wrapperRoof {
+	height: 600px;
+	background-image: url(../img/roof.png);
+	background-repeat: repeat-x;
+	background-position: left -40px;
+}
+
+#wrapperDucks {
+	position: absolute;
+	height: 185px;
+	width: 100%;
+	left: 0;
+	top: 415px;
+	z-index: 100;
+}
+#wrapperDucks .duck {
+	z-index: 10;
+}
+#wrapperFrontPanel {
+	height: 108px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url(../img/front-panel.jpg);
+	background-repeat: repeat-x;
+	background-position: right top;
+	z-index: 100;
+}
+
+#wrapperBullseyes {
+	position: absolute;
+	left: 50%;
+	top: 315px;
+	margin-left: -456px;
+	height: 200px;
+	width: 912px;
+	z-index: 80;
+}
+#wrapperMiddlePanel {
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	left: 0; 
+	bottom: 0;
+	background-image: url(../img/panel-1.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	z-index: 10;
+}
+
+#wrapperWheel {
+	position: absolute;
+	height: 540px;
+	width: 686px;
+	left: 50%;
+	top: 142px;
+	margin-left: -343px;
+	z-index: 60;
+}
+#wrapperBackPanel {
+	height: 121px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 160px;
+	background-image: url(../img/panel-2.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+#divWheel {
+	width: 520px;
+	height: 520px;
+	position: absolute;
+	left: 83px;
+	top: 0;	
+}
+#divWheelHub {
+	width: 296px;
+	height: 296px;
+	position: absolute;
+	left: 112px;
+	top: 112px;
+	z-index: 100;
+}
+
+
+
+
+/*
+	Animation styles
+*/
+.target {
+	transform: translateZ (0.1px);
+}
+.targetWrapper {
+	position: absolute;
+	
+}
+

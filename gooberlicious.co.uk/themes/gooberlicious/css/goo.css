@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+/* '.editmode' class means page is in edit mode */
+
+html,body {
+	background-color: #fff;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	height: 100%
+}
+
+#divWrapper {
+	font-size: 16px;
+	line-height: 120%;
+	
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	position: relative;
+	
+	width: 100%;
+	overflow: hidden;
+}
+#divWrapper.editmode,
+#divWrapper.editmode * {
+	overflow: visible;
+}
+
+
+#divWrapper #divTitle {
+	position: absolute;
+	z-index: 100;
+	top: 20px;
+	left: 4%;
+}
+#divWrapper.editmode #divTitle {
+	position: static;
+
+}
+
+
+#divWrapper .rowWrapper {
+	padding: 60px 4% 40px;
+	color: #4F4642;	
+	position: relative;
+}
+#divWrapper.editmode .rowWrapper {
+	position: static;
+}
+#divWrapper #divHeader.rowWrapper {
+	padding: 0;
+}
+#divWrapper .rowWrapper.odd {
+	background-color: #B1CBBE;
+}
+#divWrapper .rowWrapper.even {
+	background-color: #D7EAD7;
+}
+#divWrapper .rowWrapper .row {
+	max-width: 1050px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+#divWrapper.editmode .rowWrapper .row {
+
+	position: static;
+
+}
+#divWrapper .arrow {
+	position: absolute;
+	z-index: 0;
+	width: 189px;
+	height: 197px;
+}
+#divWrapper.editmode .arrow {
+	display: none;
+}
+#divWrapper #divMain2 .arrow {
+	background-image: url(../img/arrow1.png);
+	background-repeat: no-repeat;
+	right: 6%;
+	top: -50px;
+}
+#divWrapper #divMain3 .arrow {
+	background-image: url(../img/arrow2.png);
+	background-repeat: no-repeat;
+	left: -170px;
+	top: -50px;
+	margin-left: 10%;
+}
+
+
+
+
+#divWrapper .odd h1,
+#divWrapper .odd h2,
+#divWrapper .odd h3,
+#divWrapper .odd h4,
+#divWrapper .odd h5,
+#divWrapper .odd h6,
+#divWrapper .odd h1 a,
+#divWrapper .odd h2 a,
+#divWrapper .odd h3 a,
+#divWrapper .odd h4 a,
+#divWrapper .odd h5 a,
+#divWrapper .odd h6 a {
+	color: #D7EAD7
+}
+#divWrapper .odd .altColors h1,
+#divWrapper .odd .altColors h2,
+#divWrapper .odd .altColors h3,
+#divWrapper .odd .altColors h4,
+#divWrapper .odd .altColors h5,
+#divWrapper .odd .altColors h6,
+#divWrapper .odd .altColors h1 a,
+#divWrapper .odd .altColors h2 a,
+#divWrapper .odd .altColors h3 a,
+#divWrapper .odd .altColors h4 a,
+#divWrapper .odd .altColors h5 a,
+#divWrapper .odd .altColors h6 a {
+	color: #899A92
+}
+
+#divWrapper .even h1,
+#divWrapper .even h2,
+#divWrapper .even h3,
+#divWrapper .even h4,
+#divWrapper .even h5,
+#divWrapper .even h6,
+#divWrapper .even h1 a,
+#divWrapper .even h2 a,
+#divWrapper .even h3 a,
+#divWrapper .even h4 a,
+#divWrapper .even h5 a,
+#divWrapper .even h6 a {
+	color: #A2B7A2
+}
+#divWrapper .even .altColors h1,
+#divWrapper .even .altColors h2,
+#divWrapper .even .altColors h3,
+#divWrapper .even .altColors h4,
+#divWrapper .even .altColors h5,
+#divWrapper .even .altColors h6,
+#divWrapper .even .altColors h1 a,
+#divWrapper .even .altColors h2 a,
+#divWrapper .even .altColors h3 a,
+#divWrapper .even .altColors h4 a,
+#divWrapper .even .altColors h5 a,
+#divWrapper .even .altColors h6 a {
+	color: #899A92
+}
+
+
+#divWrapper p,
+#divWrapper h1,
+#divWrapper h2,
+#divWrapper h3,
+#divWrapper h4,
+#divWrapper h5,
+#divWrapper h6,
+#divWrapper ul,
+#divWrapper ol,
+#divWrapper dl {
+	margin: 0 0 20px;	
+}
+
+#divWrapper #divFooter {
+	color: #899A92;
+	margin: 10px 0 0;
+	padding: 0 0 160px;
+}
+
+#divWrapper h1 {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 67px;
+	line-height: 100%;
+}
+
+#divWrapper h2 {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 37px;
+	line-height: 100%;
+}
+
+#divWrapper h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+}
+#divWrapper a {
+	color: #999;
+	text-decoration: underline;
+}
+#divWrapper a:hover {
+	color: #FFACAC;
+	text-decoration: none;
+}
+#divWrapper h1 a,
+#divWrapper h2 a,
+#divWrapper h3 a,
+#divWrapper h4 a,
+#divWrapper h5 a,
+#divWrapper h6 a,
+#divWrapper h7 a {
+	text-decoration: none;
+}
+
+#divWrapper ul {
+	list-style: none;
+	margin-left:0;
+	padding-left:0;
+}
+
+#divWrapper ul li:before {
+	content: "\002B \0020";
+}
+
+
+
+/*
+	MISCELLANEOUS
+*/
+.cf:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+img.scale {
+	max-width: 100%;
+	height: auto;
+}
+.noWrap {
+	white-space: nowrap;
+} 
+
+/* Equally spaced (justified) images */
+.equiSpaceImages p {
+	text-align: justify;
+	line-height: 1px;
+}
+.equiSpaceImages img {
+  display: inline-block;
+}
+.equiSpaceImages p:after {
+  content: '';
+  width: 40%;
+  display: inline-block;
+}
+
+
+/* Portfolio list */
+.project-item {
+	margin: 0 0 30px;
+	position: relative;
+}
+.project-item .project-thumbnail {
+	background-image: url(../img/ipad.png);
+	background-repeat: no-repeat;
+	width: 405px;
+	height: 305px;
+	padding: 38px 45px 79px 44px;
+	display: inline-block;	
+	float: right;
+	margin-left: 50px;
+}
+.project-item .project-tags span {
+	padding: 3px 8px; 
+	background-color: #5D655D;
+	color: #D7EAD7;
+	display: inline-block;
+	margin: 6px;
+}
+
+
+
+/* TOOLS */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
